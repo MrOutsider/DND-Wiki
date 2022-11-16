@@ -14,8 +14,7 @@ h1 {
     text-decoration: underline;
 }
 
-h2,
-h3 {
+h2 {
     text-align: center;
 }
 
@@ -42,6 +41,6 @@ img {
     width: 100%;
 }
 
-#location {
+.location {
     border: 2px solid black;
 }
