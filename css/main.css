@@ -13,11 +13,6 @@ main {
     margin: 1rem;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-}
-
 h1 {
     color: whitesmoke;
     text-align: center;
@@ -40,9 +35,26 @@ td {
     background-color: #0d0d0d;
 }
 
+@media (max-width: 635px) {
+    table {
+        font-size: 0.75rem;
+    }
+
+    td,
+    th {
+        padding: 0.25rem;
+    }
+}
+
+@media (max-width: 545px) {
+    table {
+        font-size: 0.5rem;
+    }
+}
+
 .content {
     margin: 3%;
-    background-color: #0d0d0ddd;
+    background-color: #0d0d0def;
 }
 
 .content-top-border {
@@ -57,11 +69,18 @@ td {
     border-top: none;
 }
 
-.top-content {
+.content section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .top-content {
     flex-direction: row;
     flex-flow: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .content h2 {
@@ -69,16 +88,24 @@ td {
     text-align: center;
 }
 
+.content p {
+    margin: 0;
+}
+
 .title {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #AB966F;
 }
 
+.description {
+    min-width: 70%;
+    flex: 4;
+}
+
 .content-img {
-    height: 20rem;
-    width: 20rem;
-    min-width: 20rem;
-    margin-left: 1rem;
+    flex: 1 18rem;
+    margin: 0rem 1rem;
+    margin: 0;
     padding: 1rem;
     border: 3px double #AB966F;
     background-color: #0d0d0d;
