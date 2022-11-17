@@ -25,8 +25,16 @@ body {
     padding: 0.5em 1em;
     border-radius: 2em;
     text-align: center;
+    text-decoration: none;
     color: #AB966F;
     background-color: black;
+    border: 2px solid #AB966F;
+    transition: ease-in 100ms;
+}
+
+.top-nav a:hover {
+    color: #ece7df;
+    border: 2px solid #ece7df;
 }
 
 main {
@@ -44,6 +52,11 @@ h1 {
     color: whitesmoke;
     text-align: center;
     text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #AB966F;
 }
 
 table {
@@ -86,6 +99,7 @@ td {
 
 .content .title {
     width: 90%;
+    padding-top: 0;
     padding-bottom: 2em;
     text-decoration: none;
     border: none;
