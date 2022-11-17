@@ -1,86 +1,180 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background-color: #cecfc9;
-    margin: 0rem;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: darkgray;
+    background-color: black;
+    background-image: url("/DND-Wiki/images/Medieval_City_Scape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-header,
-footer {
-    color: #E0E1DD;
-    width: 100%;
-    padding: 1rem;
+.top-nav {
+    padding: 0.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: #201b13cc;
+    border-bottom: 2px solid #AB966F;
 }
 
-header {
-    background: linear-gradient(180deg, #0D1B2A, #1B263B);
-}
-
-footer {
-    background: linear-gradient(0deg, #0D1B2A, #1B263B);
+.top-nav a {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    text-align: center;
+    color: #AB966F;
+    background-color: black;
 }
 
 main {
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: 1em;
 }
 
-section {
-    margin-top: 1rem;
+footer {
+    min-height: 5rem;
+    display: flex;
+    background-color: #0d0d0def;
+    border-top: 2px solid #AB966F;
 }
 
 h1 {
+    color: whitesmoke;
     text-align: center;
     text-decoration: underline;
 }
 
-h2 {
+table {
+    background-color: #AB966F;
+}
+
+th {
+    padding: 0.5em;
+    color: whitesmoke;
+    background-color: black;
+}
+
+td {
+    padding: 0.5em 1em;
+    justify-content: center;
+    background-color: #0d0d0d;
+}
+
+.content {
+    margin: 0 3% 3% 3%;
+    background-color: #0d0d0def;
+}
+
+.content-top-border {
+    height: 1em;
+    border: 2px solid #AB966F;
+    border-bottom: none;
+}
+
+.content-bot-border {
+    height: 1em;
+    border: 2px solid #AB966F;
+    border-top: none;
+}
+
+.content header {
+    display: flex;
+    justify-content: center;
+}
+
+.content .title {
+    width: 90%;
+    padding-bottom: 2em;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid #AB966F;
+    text-shadow: #AB966F 0px 3px 0.2em;
+}
+
+.content section {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .top-content {
+    flex-direction: row;
+    flex-flow: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.content h2 {
+    margin: 1em;
+    padding: 0.75em 0em;
+    text-align: center;
+    border-top: 2px solid #d0c4af30;
+    border-bottom: 2px solid #d0c4af30;
+}
+
+.content p {
+    margin: 0.5em;
+    line-height: 1.5em;
+}
+
+.description {
+    min-width: 70%;
+    flex: 4;
+}
+
+.content-img {
+    flex: 1 18em;
+    margin: 0.5em;
+    padding: 1em;
+    border: 3px double #AB966F;
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content-img h3 {
+    margin: 1em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d0c4af80;
     text-align: center;
 }
 
-li {
-    margin-left: 1rem;
+.content-img img {
+    width: 100%;
 }
 
-/* Location Class Begin */
+/* Extra Large Devices Desktops */
+@media (max-width: 1200px) {}
 
-.location {
-    border: 0.1rem solid #000;
-    color: #0D1B2A;
+/* Large Devices Desktops */
+@media (max-width: 992px) {}
+
+/* Medium Device Tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    td,
+    th {
+        padding: 0.1em;
+    }
 }
 
-.location p {
-    text-indent: 2rem;
-    margin: 5rem;
-    font-size: 1.2rem;
-}
+/* Small Device Landscape */
+@media (max-width: 576px) {
 
-.location img {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 0.1rem solid #000;
-    display: block;
-}
+    td,
+    th {
+        font-size: 0.9em;
+    }
 
-.location table {
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 1rem;
-    background-color: #0D1B2A;
+    .top-nav {
+        position: static;
+        flex-direction: column;
+    }
 }
-
-.location thead {
-    background-color: #415A77;
-}
-
-.location th {
-    padding: 1rem;
-}
-
-.location td {
-    background-color: #778DA9;
-    padding: 1rem;
-    min-width: 4rem;
-}
-
-/* Location Class Begin */
