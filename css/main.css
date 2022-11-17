@@ -1,17 +1,15 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #cecfc9;
+    margin: 0rem;
 }
 
 header,
 footer {
     color: #E0E1DD;
-    padding: 20px;
+    width: 100%;
+    padding: 1rem;
 }
 
 header {
@@ -23,12 +21,12 @@ footer {
 }
 
 main {
-    margin: 8px;
-    padding: 8px;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 section {
-    margin-top: 8px;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -41,24 +39,33 @@ h2 {
 }
 
 li {
-    margin-left: 8px;
+    margin-left: 1rem;
 }
 
 /* Location Class Begin */
 
 .location {
-    border: 2px solid #000;
+    border: 0.1rem solid #000;
     color: #0D1B2A;
 }
 
+.location p {
+    text-indent: 2rem;
+    margin: 5rem;
+    font-size: 1.2rem;
+}
+
 .location img {
-    width: 50%;
-    margin-left: 25%;
-    border: 2px solid #000;
+    width: 20rem;
+    margin: 1rem auto;
+    border: 0.1rem solid #000;
+    display: block;
 }
 
 .location table {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
     background-color: #0D1B2A;
 }
 
@@ -67,12 +74,13 @@ li {
 }
 
 .location th {
-    padding: 8px;
+    padding: 1rem;
 }
 
 .location td {
     background-color: #778DA9;
-    padding: 8px;
+    padding: 1rem;
+    min-width: 4rem;
 }
 
 /* Location Class Begin */
