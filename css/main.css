@@ -51,7 +51,7 @@ td {
 }
 
 .content {
-    margin: 3%;
+    margin: 0 3% 3% 3%;
     background-color: #0d0d0def;
 }
 
@@ -65,6 +65,11 @@ td {
     height: 1rem;
     border: 2px solid #AB966F;
     border-top: none;
+}
+
+.content header {
+    display: flex;
+    justify-content: center;
 }
 
 .content section {
@@ -83,7 +88,10 @@ td {
 
 .content h2 {
     margin: 1rem;
+    padding: 0.75rem 0rem;
     text-align: center;
+    border-top: 2px solid #d0c4af30;
+    border-bottom: 2px solid #d0c4af30;
 }
 
 .content p {
@@ -91,8 +99,11 @@ td {
     line-height: 1.5rem;
 }
 
-.title {
+.content .title {
+    width: 90%;
     padding-bottom: 2rem;
+    text-decoration: none;
+    border: none;
     border-bottom: 1px solid #AB966F;
 }
 
