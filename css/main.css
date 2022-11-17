@@ -1,5 +1,6 @@
 body {
     min-height: 100vh;
+    position: relative;
     margin: 0;
     padding: 0;
     color: darkgray;
@@ -25,16 +26,21 @@ body {
     padding: 0.5em 1em;
     border-radius: 2em;
     text-align: center;
+    text-decoration: none;
     color: #AB966F;
     background-color: black;
+    border: 2px solid #AB966F;
+    transition: ease-in 100ms;
 }
 
-main {
-    margin: 1em;
+.top-nav a:hover {
+    color: #ece7df;
+    border: 2px solid #ece7df;
 }
 
 footer {
-    min-height: 5rem;
+    min-height: 5em;
+    width: 100%;
     display: flex;
     background-color: #0d0d0def;
     border-top: 2px solid #AB966F;
@@ -44,6 +50,11 @@ h1 {
     color: whitesmoke;
     text-align: center;
     text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #AB966F;
 }
 
 table {
@@ -63,7 +74,10 @@ td {
 }
 
 .content {
+    min-height: 90vh;
     margin: 0 3% 3% 3%;
+    display: flex;
+    flex-direction: column;
     background-color: #0d0d0def;
 }
 
@@ -75,6 +89,7 @@ td {
 
 .content-bot-border {
     height: 1em;
+    min-width: 100%;
     border: 2px solid #AB966F;
     border-top: none;
 }
@@ -86,11 +101,18 @@ td {
 
 .content .title {
     width: 90%;
+    padding-top: 0;
     padding-bottom: 2em;
     text-decoration: none;
     border: none;
     border-bottom: 1px solid #AB966F;
     text-shadow: #AB966F 0px 3px 0.2em;
+}
+
+.content main {
+    min-height: 100%;
+    margin: 1em;
+    flex: 1;
 }
 
 .content section {
