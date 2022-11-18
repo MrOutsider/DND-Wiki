@@ -215,3 +215,17 @@ td {
         flex-direction: column;
     }
 }
+
+/* Small Device Portrait */
+@media (max-width: 400px) {
+
+    td,
+    th {
+        font-size: 0.6em;
+    }
+
+    .top-nav {
+        position: static;
+        flex-direction: column;
+    }
+}
