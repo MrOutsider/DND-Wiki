@@ -52,6 +52,10 @@ h1 {
     text-decoration: underline;
 }
 
+h3 {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: #AB966F;
@@ -60,6 +64,10 @@ a {
 
 a:hover {
     color: #ece7df;
+}
+
+p {
+    text-indent: 2em;
 }
 
 table {
@@ -160,7 +168,6 @@ td {
     background-color: #0d0d0d;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .content-img h3 {
@@ -171,7 +178,10 @@ td {
 }
 
 .content-img img {
-    width: 100%;
+    max-width: 20em;
+    flex: 1 1 20em;
+    border: 2px solid #d0c4af80;
+    align-self: center;
 }
 
 /* Extra Large Devices Desktops */
