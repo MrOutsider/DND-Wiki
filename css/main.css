@@ -151,13 +151,12 @@ td {
 }
 
 .content p {
-    margin: 0.5em;
+    margin: 2em;
     line-height: 1.5em;
 }
 
-.description {
-    min-width: 70%;
-    flex: 4;
+.top-content .description {
+    flex: 5 60em;
 }
 
 .content-img {
