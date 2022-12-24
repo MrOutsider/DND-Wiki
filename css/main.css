@@ -102,7 +102,6 @@ td {
 
 .content-bot-border {
     height: 1em;
-    min-width: 100%;
     border: 2px solid #AB966F;
     border-top: none;
 }
